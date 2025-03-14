@@ -1,1 +1,1 @@
-# Into-to-SSM
+# Intro-to-SSM
