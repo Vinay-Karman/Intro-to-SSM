@@ -1,9 +1,11 @@
 \documentclass{beamer}
 \usetheme{Madrid}
+\usepackage{xcolor}
 \usecolortheme{whale}
+\useoutertheme{miniframes} % Adds navigation dots
 
 \title{Introduction to State Space Models}
-\subtitle{Project Presentation}
+\subtitle{UG BTech - 2nd Year}
 \author{Vinay , Vaibhav Mahore , Shubhadeep Sing , Snehal Biswas}
 \institute{Indian Institute of Science, Bangalore}
 \date{\today}
@@ -18,14 +20,79 @@
 \end{frame}
 
 \section{Introduction}
+
+% Slide 1: Need for Sequential Data Modeling
 \begin{frame}
-\frametitle{Introduction}
+\frametitle{The Need for Sequential Data Modeling}
 \begin{itemize}
-    \item Background of the problem
-    \item Motivation
-    \item Project objectives
+    \item \textbf{What is Sequential Data?}   \\
+    \begin{itemize}
+        \item \textbf{Ans :} It's the  data that comes in a specific order, where the arrangement of the data points matters.
+    \end{itemize}
+    \item \textbf{Example(NLP):}  
+     The \textcolor{blue}{dog} bites the \textcolor{red}{man} vs The \textcolor{red}{man} bites the \textcolor{blue}{dog}.
+     \item \textbf{Need for Sequential Data Modeling:}
+      It's crucial because many datasets have an inherent order e.g Language, Time series in which the sequence and context between data points are essential for accurate analysis and predictions.
+    \item \textbf{Challenge:}  
+    Traditional models(e.g. Feedforward Networks) treat inputs independently and fail to capture such temporal dependencies.
 \end{itemize}
 \end{frame}
+
+% Slide 2: RNN vs. Feedforward Neural Networks
+\begin{frame}
+\frametitle{Recurrent Neural Networks(RNNs)}
+\begin{itemize}
+    \item \textbf{This is an introduction to the topic}
+    \begin{itemize}
+        \item Process inputs in isolation.
+        \item Suitable for static pattern recognition.
+    \end{itemize}
+    \item \textbf{Recurrent Neural Networks (RNNs):}
+    \begin{itemize}
+        \item Incorporate loops to retain information across time steps.
+        \item Use hidden states to capture temporal dependencies.
+    \end{itemize}
+    \item \textbf{Key Difference:}  
+    RNNs are designed to handle sequential data, while FNNs lack an inherent mechanism for managing context over time.
+\end{itemize}
+\end{frame}
+
+% Slide 3: Transition from RNN to LSTM
+\begin{frame}
+\frametitle{From RNN to LSTM}
+\begin{itemize}
+    \item \textbf{Limitations of Vanilla RNNs:}
+    \begin{itemize}
+        \item Suffer from vanishing and exploding gradients during training.
+        \item Struggle with capturing long-range dependencies.
+    \end{itemize}
+    \item \textbf{Introduction of LSTMs:}
+    \begin{itemize}
+        \item LSTMs introduce gating mechanisms (input, forget, output) to better manage memory.
+        \item They effectively mitigate gradient issues and improve long-term dependency learning.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+% Slide 4: Limitations of LSTM (with research backing)
+\begin{frame}
+\frametitle{Limitations of LSTMs}
+\begin{itemize}
+    \item \textbf{Scalability and Computational Complexity:}
+    \begin{itemize}
+        \item Despite improvements, LSTMs remain computationally intensive for very long sequences.
+    \end{itemize}
+    \item \textbf{Long-Range Dependency Challenges:}
+    \begin{itemize}
+        \item Research such as Bengio et al. (1994) and Pascanu et al. (2013) has demonstrated that LSTMs can still struggle with vanishing gradients when modeling very long sequences.
+    \end{itemize}
+    \item \textbf{Sequential Processing Bottleneck:}
+    \begin{itemize}
+        \item The inherent sequential nature of LSTM processing limits parallelism, resulting in slower training compared to more modern architectures.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
 
 \section{Methodology}
 \begin{frame}
