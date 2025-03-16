@@ -30,9 +30,9 @@
         \item \textbf{Ans :} It's the  data that comes in a specific order, where the arrangement of the data points matters.
     \end{itemize}
     \item \textbf{Example(NLP):}  
-     The \textcolor{blue}{dog} bites the \textcolor{red}{man} vs The \textcolor{red}{man} bites the \textcolor{blue}{dog}.
-     \item \textbf{Need for Sequential Data Modeling:}
-      It's crucial because many datasets have an inherent order e.g Language, Time series in which the sequence and context between data points are essential for accurate analysis and predictions.
+    The \textcolor{blue}{dog} bites the \textcolor{red}{man} vs The \textcolor{red}{man} bites the \textcolor{blue}{dog}.
+    \item \textbf{Need for Sequential Data Modeling:}
+    It's crucial because many datasets have an inherent order e.g Language, Time series in which the sequence and context between data points are essential for accurate analysis and predictions.
     \item \textbf{Challenge:}  
     Traditional models(e.g. Feedforward Networks) treat inputs independently and fail to capture such temporal dependencies.
 \end{itemize}
@@ -42,18 +42,20 @@
 \begin{frame}
 \frametitle{Recurrent Neural Networks(RNNs)}
 \begin{itemize}
-    \item \textbf{This is an introduction to the topic}
+    \item \textbf{RNNs are used because they:}
     \begin{itemize}
-        \item Process inputs in isolation.
-        \item Suitable for static pattern recognition.
+        \item Capture temporal dependencies in sequential data (e.g., time series, text, speech).
+        \item Retain memory of previous inputs via hidden states, allowing context-aware predictions.
+    \ite\item Address the limitation of feedforward networks, which treat inputs as independent and ignore sequence order.m Example: Predicting the next word in a sentence requires knowing prior words—RNNs inherently model this relationship.    
     \end{itemize}
-    \item \textbf{Recurrent Neural Networks (RNNs):}
+    \item \textbf{Recurrent Neural Networks (RNNs) neural networks designed for sequential data (e.g., text, time series, speech). Unlike standard networks, they:}
     \begin{itemize}
-        \item Incorporate loops to retain information across time steps.
-        \item Use hidden states to capture temporal dependencies.
+        \item Retain memory: Use hidden states to pass information between steps in a sequence.
+        \item Capture context: Model dependencies over time (e.g., predicting the next word using prior words).
+        \item Struggle with long sequences: Prone to forgetting distant inputs (fixed by LSTM).
+        \item Example: Used in chatbots, stock prediction, and speech recognition 
     \end{itemize}
-    \item \textbf{Key Difference:}  
-    RNNs are designed to handle sequential data, while FNNs lack an inherent mechanism for managing context over time.
+    .
 \end{itemize}
 \end{frame}
 
