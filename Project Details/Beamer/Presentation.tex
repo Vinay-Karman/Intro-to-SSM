@@ -14,10 +14,7 @@
 
 \frame{\titlepage}
 
-\begin{frame}
-\frametitle{Outline}
-\tableofcontents
-\end{frame}
+
 
 \section{Introduction}
 
@@ -39,25 +36,25 @@
 \end{frame}
 
 % Slide 2: RNN vs. Feedforward Neural Networks
-\begin{frame}
-\frametitle{Recurrent Neural Networks(RNNs)}
-\begin{itemize}
-    \item \textbf{RNNs are used because they:}
-    \begin{itemize}
-        \item Capture temporal dependencies in sequential data (e.g., time series, text, speech).
-        \item Retain memory of previous inputs via hidden states, allowing context-aware predictions.
-    \ite\item Address the limitation of feedforward networks, which treat inputs as independent and ignore sequence order.m Example: Predicting the next word in a sentence requires knowing prior words—RNNs inherently model this relationship.    
-    \end{itemize}
-    \item \textbf{Recurrent Neural Networks (RNNs) is a class of artificial neural networks designed for sequential data (e.g., text, time series, speech). RNNs have feedback loops that allow them to maintain a "memory" of previous inputs, making them suitable for tasks where context and order matter. Unlike standard networks, they:}
-    \begin{itemize}
-        \item Retain memory: Use hidden states to pass information between steps in a sequence.
-        \item Capture context: Model dependencies over time (e.g., predicting the next word using prior words).
-        \item Struggle with long sequences: Prone to forgetting distant inputs (fixed by LSTM).
-        \item Example: Used in chatbots, stock prediction, and speech recognition 
-    \end{itemize}
-    .
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Recurrent Neural Networks(RNNs)}
+% \begin{itemize}
+%     \item \textbf{RNNs are used because they:}
+%     \begin{itemize}
+%         \item Capture temporal dependencies in sequential data (e.g., time series, text, speech).
+%         \item Retain memory of previous inputs via hidden states, allowing context-aware predictions.
+%     \ite\item Address the limitation of feedforward networks, which treat inputs as independent and ignore sequence order.m Example: Predicting the next word in a sentence requires knowing prior words—RNNs inherently model this relationship.    
+%     \end{itemize}
+%     \item \textbf{Recurrent Neural Networks (RNNs) is a class of artificial neural networks designed for sequential data (e.g., text, time series, speech). RNNs have feedback loops that allow them to maintain a "memory" of previous inputs, making them suitable for tasks where context and order matter. Unlike standard networks, they:}
+%     \begin{itemize}
+%         \item Retain memory: Use hidden states to pass information between steps in a sequence.
+%         \item Capture context: Model dependencies over time (e.g., predicting the next word using prior words).
+%         \item Struggle with long sequences: Prone to forgetting distant inputs (fixed by LSTM).
+%         \item Example: Used in chatbots, stock prediction, and speech recognition 
+%     \end{itemize}
+%     .
+% \end{itemize}
+% \end{frame}
 
 % Slide 3: Transition from RNN to LSTM
 \begin{frame}
