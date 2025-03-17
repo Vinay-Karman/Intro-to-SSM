@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742193940.7285 "d:/intro to ssm/Intro-to-SSM/Project Details/Beamer/Presentation.tex" "Presentation.pdf" "Presentation" 1742193943.67267 2
-  "C:/Users/91790/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1742193533 81116 dbcbff3cc11849e73194397f26e54a77 ""
+["pdflatex"] 1742211461.15994 "d:/project/Intro-to-SSM/Project Details/Beamer/Presentation.tex" "Presentation.pdf" "Presentation" 1742211463.32599 0
+  "C:/Users/91790/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1742197370 81116 dbcbff3cc11849e73194397f26e54a77 ""
   "C:/Users/91790/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1742126370 12036089 765f1ded54b1eb695de4d84530aa5fac ""
   "C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmss10.tfm" 1136765053 1316 b636689f1933f24d1294acdf6041daaa ""
@@ -172,12 +172,11 @@
   "C:/Users/91790/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/91790/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/91790/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Presentation.aux" 1742193943 3218 cb9804213940afa4b1f58e662cabbebf "pdflatex"
-  "Presentation.nav" 1742193943 1973 0639dfaa7ffc348dd23cfc79d6189043 "pdflatex"
-  "Presentation.out" 1742193943 493 1277019eeb049e522db810583ec589a4 "pdflatex"
-  "Presentation.tex" 1742193934 5498 7e58e69939b6d45d6847a2def230b5f9 ""
-  "Presentation.toc" 1742193943 236 c24e4716b0138877d8d09a99045e5925 "pdflatex"
-  "d:/intro to ssm/Intro-to-SSM/Project Details/Beamer/Presentation.tex" 1742193934 5498 7e58e69939b6d45d6847a2def230b5f9 ""
+  "Presentation.aux" 1742211463 2952 63574ed176922943127534e9418bcf95 "pdflatex"
+  "Presentation.nav" 1742211463 1781 0368a61ccf5c806a9d382b62aeab2a39 "pdflatex"
+  "Presentation.out" 1742211463 493 1277019eeb049e522db810583ec589a4 "pdflatex"
+  "Presentation.tex" 1742211458 5470 cb914810a997fb615fff190d1c357a44 ""
+  "d:/project/Intro-to-SSM/Project Details/Beamer/Presentation.tex" 1742211458 5470 cb914810a997fb615fff190d1c357a44 ""
   (generated)
   "Presentation.aux"
   "Presentation.log"

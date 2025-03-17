@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.16)  17 MAR 2025 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.16)  17 MAR 2025 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/intro to ssm/Intro-to-SSM/Project Details/Beamer/Presentation.tex"
-(d:/intro to ssm/Intro-to-SSM/Project Details/Beamer/Presentation.tex
+**"d:/project/Intro-to-SSM/Project Details/Beamer/Presentation.tex"
+(d:/project/Intro-to-SSM/Project Details/Beamer/Presentation.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\91790\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
@@ -614,6 +614,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 13.
+ (Presentation.out) (Presentation.out)
 \@outlinefile=\write5
 \openout5 = `Presentation.out'.
 
@@ -698,11 +699,10 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [1{C:/Users/91790/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 20--20
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 36--36
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
-No file Presentation.toc.
 
 
 
@@ -713,7 +713,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 39--39
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 74--74
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -727,23 +727,8 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 60--60
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 93--93
  [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-d:/intro to ssm/Intro-to-SSM/Project Details/Beamer/Presentation.tex:60: Undefined control sequence.
-\beamer@doifinframe ...xt-aware predictions. \ite 
-                                                  \item Address the limitati...
-l.60 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \vbox (72.98439pt too high) detected at line 60
  []
 
 
@@ -756,7 +741,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 77--77
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 105--105
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -770,7 +755,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 96--96
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 116--116
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -784,7 +769,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 108--108
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 127--127
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -798,7 +783,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 119--119
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 138--138
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -812,7 +797,7 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 130--130
+Overfull \hbox (145.67743pt too wide) in paragraph at lines 145--145
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -824,34 +809,6 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
  []
 
 [9
-
-]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 141--141
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (145.67743pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[10
-
-]
-Overfull \hbox (145.67743pt too wide) in paragraph at lines 148--148
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (145.67743pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[11
 
 ]
 \tf@nav=\write6
@@ -868,28 +825,21 @@ Overfull \hbox (145.67743pt too wide) has occurred while \output is active
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `Presentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Presentation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1277019EEB049E522DB810583EC589A4;493.
+Package rerunfilecheck Info: File `Presentation.out' has not changed.
+(rerunfilecheck)             Checksum: 1277019EEB049E522DB810583EC589A4;493.
  ) 
 Here is how much of TeX's memory you used:
  21801 strings out of 473523
- 428724 string characters out of 5714630
- 802807 words of memory out of 5000000
+ 428816 string characters out of 5714630
+ 800891 words of memory out of 5000000
  44572 multiletter control sequences out of 15000+600000
  561542 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,458b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,123p,453b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/91790/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on Presentation.pdf (11 pages, 168427 bytes).
+Output written on Presentation.pdf (9 pages, 147224 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

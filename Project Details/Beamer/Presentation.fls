@@ -1,6 +1,6 @@
-PWD d:\intro to ssm\Intro-to-SSM\Project Details\Beamer
+PWD d:\project\Intro-to-SSM\Project Details\Beamer
 INPUT C:\Users\91790\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\intro to ssm\Intro-to-SSM\Project Details\Beamer\Presentation.tex
+INPUT d:\project\Intro-to-SSM\Project Details\Beamer\Presentation.tex
 OUTPUT Presentation.log
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
@@ -310,6 +310,12 @@ INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\Presentation.out
+INPUT .\Presentation.out
+INPUT Presentation.out
+INPUT Presentation.out
+INPUT .\Presentation.out
+INPUT .\Presentation.out
 OUTPUT Presentation.out
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-basic-dictionary-English.dict
 INPUT C:\Users\91790\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-basic-dictionary-English.dict

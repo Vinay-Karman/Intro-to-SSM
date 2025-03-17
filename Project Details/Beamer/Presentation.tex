@@ -58,21 +58,49 @@
 
 % Slide 3: Transition from RNN to LSTM
 \begin{frame}
-\frametitle{From RNN to LSTM}
-\begin{itemize}
-    \item \textbf{Limitations of Vanilla RNNs:}
-    \begin{itemize}
-        \item Suffer from vanishing and exploding gradients during training.
-        \item Struggle with capturing long-range dependencies.
-    \end{itemize}
-    \item \textbf{Introduction of LSTMs:}
-    \begin{itemize}
-        \item LSTMs introduce gating mechanisms (input, forget, output) to better manage memory.
-        \item They effectively mitigate gradient issues and improve long-term dependency learning.
-    \end{itemize}
-\end{itemize}
-\end{frame}
+    \frametitle{Long Short-Term Memory (LSTM)}
+    \vspace{0cm}
+    
+    \begin{columns}[T]
+        % Left Column
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item \textbf{Introduction of LSTM:}
+            \begin{itemize}
+                \item LSTMs overcome standard RNN limitations by using a dedicated cell state to store and retain long-term information.
+                \item They use three specialized gates—input, forget, and output—to precisely control how data enters and exits the cell state.
+            \end{itemize}
+        \end{itemize}
 
+        % First part of the equations in small font size
+        \vspace{-0.4cm}
+        {\small
+        \[
+        \begin{aligned}
+            f_t &= \sigma\bigl(W_f [h_{t-1}, x_t] + b_f\bigr),\\[5pt]
+            i_t &= \sigma\bigl(W_i [h_{t-1}, x_t] + b_i\bigr),\\[5pt]
+            \tilde{C}_t &= \tanh\bigl(W_C [h_{t-1}, x_t] + b_C\bigr),
+        \end{aligned}
+        \]
+        }
+        
+        % Right Column
+        \column{0.5\textwidth}
+        \raggedright
+        \includegraphics[width=0.9\textwidth]{LSTM.png}
+        \vspace{-0.15cm}
+        
+        {\small
+        \[
+        \begin{aligned}
+            C_t &= f_t \times C_{t-1} + i_t \times \tilde{C}_t,\\[5pt]
+            o_t &= \sigma\bigl(W_o [h_{t-1}, x_t] + b_o\bigr),\\[5pt]
+            h_t &= o_t \times \tanh\bigl(C_t\bigr).
+        \end{aligned}
+        \]
+        }
+    \end{columns}
+\end{frame}
 % Slide 4: Limitations of LSTM (with research backing)
 \begin{frame}
 \frametitle{Limitations of LSTMs}
