@@ -14,6 +14,9 @@
 
 \frame{\titlepage}
 
+\section{Outline}
+
+
 
 
 \section{Introduction}
@@ -37,46 +40,49 @@
 
 % Slide 2: RNN Basics
 \begin{frame}
-    \frametitle{Recurrent Neural Networks (RNNs)}
+\frametitle{Recurrent Neural Networks (RNNs)}
     \begin{itemize}
         \item \textbf{Why RNNs?}
         \begin{itemize}
-            \item A key Characteristic that sets RNN apart from traditional FFN is their \textbf{recurrence}, which allows them to maintain an internal state over time .
+            \item A key characteristic that sets RNN apart from traditional FFN is their \textbf{recurrence}, which allows them to maintain an internal state over time .
                 \end{itemize}
             \begin{figure}[h]  % 'h' suggests placing it here
                 \centering
-                \includegraphics[width=0.4\textwidth]{RNN.png}
-                \caption{RNN Architecture} 
+                \includegraphics[width=0.8\textwidth]{RNN.png}
             \end{figure}     
             \begin{align}
             h_t &= \sigma(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h) \\
             o_t &= W_{hy} \cdot h_t + b_y
         \end{align}
-        \end{itemize}
-        
-    \frametitle{RNN Equations}
-    
-    \end{frame}
+    \end{itemize}
+\end{frame}
     
     
     
     %Slide 3: RNN Architecture and Limitations
     
-    \frametitle{RNNs: Structure and Challenges}
-    \begin{frame}
-    \frametitle{RNNs: Structure and Challenges}
-    
+\begin{frame}
+\frametitle{RNNs: Structure and Challenges}
     \begin{itemize}
-        \item\textbf{RNN:} Maintains a hidden state to retain memory of previous inputs, enabling it to model sequential dependencies (e.g., predicting the next word in a sentence).
-    
-        \item\textbf{FFN:} Processes inputs independently with no memory of prior data, treating each input as isolated (e.g., classifying individual images).
-    \item \textbf{Challenge:} LSTMs are needed after RNNs to address the vanishing gradient problem, enabling effective learning of long-term dependencies in sequences by maintaining stable gradients over many time steps  
-        
+        \item \textbf{Benefits:}
+        \begin{itemize}
+            \item \textbf{Temporal Contextualization:} RNNs maintain an internal state that carries information from previous time steps, allowing them to capture the temporal dependencies inherent in sequential data.
+            \item \textbf{Efficient Weight Sharing:} RNNs share weights across different time steps, reducing the number of parameters and improving generalization.
         \end{itemize}
-    
-    
-    
-    \end{frame}
+        
+        \item \textbf{Challenges:}
+        \begin{itemize}
+            \item \textbf{Vanishing and Exploding Gradients:}
+            Gradients may decay over time making early data less influential or
+            become excessively large leading to training instability.
+
+           
+            \item \textbf{Sequential Processing Bottleneck:}
+            RNNs process data sequentially, making them computationally inefficient, especially for long sequences.
+           
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
 % Slide 3: Transition from RNN to LSTM
 \begin{frame}

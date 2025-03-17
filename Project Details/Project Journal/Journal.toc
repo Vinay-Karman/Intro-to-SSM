@@ -1,3 +1,4 @@
 \contentsline {section}{\numberline {1}Day 1: Meeting and Project Discussion}{1}{section.1}%
 \contentsline {section}{\numberline {2}Day 2: Literature Review}{1}{section.2}%
+\contentsline {section}{\numberline {3}Day 3: Slides for RNN and LSTM}{2}{section.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
