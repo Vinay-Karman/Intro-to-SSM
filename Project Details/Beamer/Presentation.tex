@@ -35,26 +35,48 @@
 \end{itemize}
 \end{frame}
 
-% Slide 2: RNN vs. Feedforward Neural Networks
-% \begin{frame}
-% \frametitle{Recurrent Neural Networks(RNNs)}
-% \begin{itemize}
-%     \item \textbf{RNNs are used because they:}
-%     \begin{itemize}
-%         \item Capture temporal dependencies in sequential data (e.g., time series, text, speech).
-%         \item Retain memory of previous inputs via hidden states, allowing context-aware predictions.
-%     \ite\item Address the limitation of feedforward networks, which treat inputs as independent and ignore sequence order.m Example: Predicting the next word in a sentence requires knowing prior words—RNNs inherently model this relationship.    
-%     \end{itemize}
-%     \item \textbf{Recurrent Neural Networks (RNNs) is a class of artificial neural networks designed for sequential data (e.g., text, time series, speech). RNNs have feedback loops that allow them to maintain a "memory" of previous inputs, making them suitable for tasks where context and order matter. Unlike standard networks, they:}
-%     \begin{itemize}
-%         \item Retain memory: Use hidden states to pass information between steps in a sequence.
-%         \item Capture context: Model dependencies over time (e.g., predicting the next word using prior words).
-%         \item Struggle with long sequences: Prone to forgetting distant inputs (fixed by LSTM).
-%         \item Example: Used in chatbots, stock prediction, and speech recognition 
-%     \end{itemize}
-%     .
-% \end{itemize}
-% \end{frame}
+% Slide 2: RNN Basics
+\begin{frame}
+    \frametitle{Recurrent Neural Networks (RNNs)}
+    \begin{itemize}
+        \item \textbf{Why RNNs?}
+        \begin{itemize}
+            \item A key Characteristic that sets RNN apart from traditional FFN is their \textbf{recurrence}, which allows them to maintain an internal state over time .
+                \end{itemize}
+            \begin{figure}[h]  % 'h' suggests placing it here
+                \centering
+                \includegraphics[width=0.4\textwidth]{RNN.png}
+                \caption{RNN Architecture} 
+            \end{figure}     
+            \begin{align}
+            h_t &= \sigma(W_{hh} \cdot h_{t-1} + W_{xh} \cdot x_t + b_h) \\
+            o_t &= W_{hy} \cdot h_t + b_y
+        \end{align}
+        \end{itemize}
+        
+    \frametitle{RNN Equations}
+    
+    \end{frame}
+    
+    
+    
+    %Slide 3: RNN Architecture and Limitations
+    
+    \frametitle{RNNs: Structure and Challenges}
+    \begin{frame}
+    \frametitle{RNNs: Structure and Challenges}
+    
+    \begin{itemize}
+        \item\textbf{RNN:} Maintains a hidden state to retain memory of previous inputs, enabling it to model sequential dependencies (e.g., predicting the next word in a sentence).
+    
+        \item\textbf{FFN:} Processes inputs independently with no memory of prior data, treating each input as isolated (e.g., classifying individual images).
+    \item \textbf{Challenge:} LSTMs are needed after RNNs to address the vanishing gradient problem, enabling effective learning of long-term dependencies in sequences by maintaining stable gradients over many time steps  
+        
+        \end{itemize}
+    
+    
+    
+    \end{frame}
 
 % Slide 3: Transition from RNN to LSTM
 \begin{frame}
