@@ -129,24 +129,68 @@
         }
     \end{columns}
 \end{frame}
-% Slide 4: Limitations of LSTM (with research backing)
+% Slide 5: Limitations of LSTM (with research backing)
 \begin{frame}
-\frametitle{Limitations of LSTMs}
-\begin{itemize}
-    \item \textbf{Scalability and Computational Complexity:}
-    \begin{itemize}
-        \item Despite improvements, LSTMs remain computationally intensive for very long sequences.
-    \end{itemize}
-    \item \textbf{Long-Range Dependency Challenges:}
-    \begin{itemize}
-        \item Research such as Bengio et al. (1994) and Pascanu et al. (2013) has demonstrated that LSTMs can still struggle with vanishing gradients when modeling very long sequences.
-    \end{itemize}
-    \item \textbf{Sequential Processing Bottleneck:}
-    \begin{itemize}
-        \item The inherent sequential nature of LSTM processing limits parallelism, resulting in slower training compared to more modern architectures.
-    \end{itemize}
-\end{itemize}
+    \frametitle{LSTMs: Structure and Challenges}
+    \begin{block}{Benefits}
+        \begin{itemize}
+            \item \textbf{Long-Term Dependency Learning:} LSTMs store long-term information and work well on tasks needing extended memory.
+            \item \textbf{Selective Memory Management:} They learn what to keep and what to discard, boosting sequential task performance.
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0cm} % Adjust spacing as needed
+    
+    \begin{block}{Challenges}
+        \begin{itemize}
+            \item \textbf{Memory Limitations:} LSTMs handle long sequences well, but their finite memory may struggle with very long-range dependencies.
+            \item \textbf{Limited Parallelization:}It process data sequentially, limiting GPU parallelization and resulting in slower performance.
+            \item \textbf{Vanishing \& Exploding Gradients:}It reduce vanishing gradients compared to RNNs but can still struggle on very long sequences.
+        \end{itemize}
+    \end{block}
 \end{frame}
+% Slide 6: Limitations of LSTM (with research backing)
+\begin{frame}
+    \frametitle{Linear State Space Layers (LSSL)}
+    \begin{columns}[T]
+        % Left column with text content
+        \begin{column}{0.55\textwidth}
+            \vspace{3mm}
+            \textbf{Why LSSL?}
+            \begin{itemize}
+                \item \textbf{Enhanced Long-Range Dependency}
+                \item \textbf{Parallel Processing Capability}
+                \item \textbf{Adaptive to Different Sequence Lengths}
+                \item \textbf{Improved Gradient Flow}
+                \item \textbf{Hybrid Architecture:}
+                \begin{itemize}
+                    \item \textbf{CNN Layers:} Quickly extract local features from data.
+                    \item \textbf{RNN Layers:} Capture sequential patterns and long-range dependencies.
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        
+        % Right column for an image and formulas
+        \begin{column}{0.40\textwidth}
+            \begin{center}
+                \vspace{-6mm}
+                \includegraphics[width=0.45\textwidth]{LSSL_continuous.png} % Replace with your image file path
+                \vspace{-4mm} % Adjust spacing between the image and formulas as needed
+                {\small
+                \[
+                  \dot{x}(t) = Ax(t) + Bu(t)
+                \]
+                \vspace{-7mm} % Adjust gap between the formulas as needed
+                \[
+                  y(t) = Cx(t) + Du(t)
+                \]
+                }
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
 
 
 \section{Methodology}
